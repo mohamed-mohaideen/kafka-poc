@@ -14,6 +14,7 @@ public class PublishController {
 	
 	@Autowired
 	private KafkaTemplate<String, String> template;
+	
 
 	@PostMapping("/create/{type}")
 	public void publishData(
